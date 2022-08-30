@@ -34,9 +34,6 @@ public class AmazonSES {
 
     public void verifyEmail(UserDto userDto) {
 
-        System.setProperty("aws.accessKeyId", "AKIAU5YEY5G4VKM7D5VO");
-        System.setProperty("aws.secretKey", "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");
-
         AmazonSimpleEmailService client = AmazonSimpleEmailServiceClientBuilder.standard().withRegion(Regions.AP_SOUTH_1)
                 .build();
 
